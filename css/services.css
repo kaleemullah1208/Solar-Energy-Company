@@ -1,0 +1,161 @@
+/* ============================================================
+   Services Page — Supplemental Styles
+   ============================================================ */
+
+/* ---- Service Detail Layout ---- */
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.service-detail--reverse { direction: rtl; }
+.service-detail--reverse > * { direction: ltr; }
+
+.service-detail__image {
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+.service-detail__image img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+.service-detail__image:hover img { transform: scale(1.04); }
+
+.service-detail__content .service-card__icon {
+  margin-bottom: 12px;
+}
+.service-detail__content .section__tag {
+  margin-bottom: 12px;
+}
+.service-detail__content h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.service-detail__content > p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+/* ---- Feature List ---- */
+.service-detail__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+.service-detail__features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .95rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+.service-detail__features i {
+  color: var(--color-primary);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* ---- Pricing Tag ---- */
+.service-detail__pricing {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.pricing-tag {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pricing-tag span {
+  font-size: .8rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.pricing-tag strong {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-primary);
+  line-height: 1;
+}
+.pricing-tag small {
+  font-size: .8rem;
+  color: var(--color-text-muted);
+}
+
+/* ---- Section Divider ---- */
+.section-divider {
+  height: 1px;
+  background: var(--color-gray-light);
+  margin: 0 24px;
+}
+
+/* ---- Add-On Cards ---- */
+.addons__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.addon-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--border-radius-lg);
+  padding: 36px 28px;
+  text-align: center;
+  transition: var(--transition);
+}
+.addon-card:hover {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(249,115,22,.3);
+  transform: translateY(-6px);
+}
+.addon-card__icon {
+  width: 60px; height: 60px;
+  background: rgba(249,115,22,.15);
+  color: var(--color-primary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 20px;
+}
+.addon-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+.addon-card p {
+  color: rgba(255,255,255,.6);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .service-detail { grid-template-columns: 1fr; gap: 40px; }
+  .service-detail--reverse { direction: ltr; }
+  .service-detail__image img { height: 360px; }
+  .addons__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .service-detail__image img { height: 260px; }
+  .addons__grid { grid-template-columns: 1fr; }
+  .service-detail__pricing { flex-direction: column; align-items: flex-start; }
+}

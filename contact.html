@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact SolarVision Energy — get a free solar quote, ask a question, or find your nearest installer." />
+  <title>Contact | SolarVision Energy</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon"><i class="fas fa-sun"></i></span>
+        Solar<span>Vision</span>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="about.html" class="nav__link">About Us</a></li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm">Get Free Quote</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=1600&auto=format&fit=crop&q=80" alt="Contact us" />
+    </div>
+    <div class="page-hero__content container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Contact</span>
+      </nav>
+      <span class="section__tag">Get In Touch</span>
+      <h1>Let's Talk Solar</h1>
+      <p>Whether you want a quote, have a question, or just want to explore your options — our team is ready to help.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact__inner">
+
+        <!-- Info Panel -->
+        <div class="contact__info reveal">
+          <h2>We'd Love to Hear From You</h2>
+          <p>Fill in the form and one of our solar consultants will get back to you within 24 hours. Or reach us directly using the details below.</p>
+
+          <div class="contact__details">
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+923151900774">+92 315 1900774</a>
+                <span>Mon–Fri 8am–6pm PKT</span>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:kaleemullah03151900@gmail.com">kaleemullah03151900@gmail.com</a>
+                <span>We reply within 24 hours</span>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Office Address</strong>
+                <span>Dalazak Road</span>
+                <span>Peshawar, Pakistan</span>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong>Business Hours</strong>
+                <span>Monday – Friday: 8:00am – 6:00pm</span>
+                <span>Saturday: 9:00am – 2:00pm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__social">
+            <p>Follow us</p>
+            <div class="footer__social" style="margin-top:12px;">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Get Your Free Quote</h3>
+            <p class="contact-form__sub">Tell us a little about your project and we'll prepare a personalised solar proposal.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="0400 000 000" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Service Interested In <span class="required">*</span></label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option value="residential">Residential Solar</option>
+                <option value="commercial">Commercial Solar</option>
+                <option value="battery">Battery Storage</option>
+                <option value="monitoring">Solar Monitoring</option>
+                <option value="maintenance">Maintenance & Service</option>
+                <option value="ev">EV Charger Integration</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="propertyType">Property Type</label>
+                <select id="propertyType" name="propertyType">
+                  <option value="" disabled selected>Select…</option>
+                  <option value="house">House</option>
+                  <option value="apartment">Apartment / Unit</option>
+                  <option value="commercial">Commercial Building</option>
+                  <option value="industrial">Industrial / Warehouse</option>
+                  <option value="farm">Farm / Rural</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Approximate Budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select…</option>
+                  <option value="under5k">Under $5,000</option>
+                  <option value="5k-10k">$5,000 – $10,000</option>
+                  <option value="10k-20k">$10,000 – $20,000</option>
+                  <option value="20k-50k">$20,000 – $50,000</option>
+                  <option value="50k+">$50,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us More</label>
+              <textarea id="message" name="message" placeholder="Describe your energy needs, roof size, current power bill, or any questions you have…"></textarea>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span>I agree to be contacted by SolarVision Energy regarding my enquiry. <a href="#">Privacy Policy</a></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg form-submit">
+              <i class="fas fa-paper-plane"></i> Send My Enquiry
+            </button>
+          </form>
+
+          <!-- Success Message (hidden by default) -->
+          <div class="form-success" id="formSuccess" hidden>
+            <div class="form-success__icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Enquiry Sent!</h3>
+            <p>Thanks for getting in touch. A solar consultant will contact you within 24 hours to discuss your project.</p>
+            <a href="index.html" class="btn btn--primary">Back to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--light faq-section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Common Questions</span>
+        <h2 class="section__title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq__grid">
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            How long does installation take?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Most residential systems are installed in 1–2 days. Commercial installations vary by scale but our team provides a detailed timeline before any work begins.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            What rebates are available?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>The federal Small-scale Technology Certificates (STCs) scheme provides substantial upfront discounts. Many states also offer additional rebates. Our team handles all paperwork on your behalf.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            What warranty do I get?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>All SolarVision installations include a 25-year manufacturer's warranty on panels, a 10-year product warranty on inverters, and a 10-year workmanship warranty on our installation work.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            Do solar panels work on cloudy days?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes. Solar panels generate electricity from daylight, not direct sunlight. They produce less energy on overcast days but continue to generate power year-round in all Australian climates.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            Can I add battery storage later?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Absolutely. All our systems are designed to be battery-ready. You can add storage at any point after installation. We recommend a compatible hybrid inverter if battery storage is a future goal.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__question" aria-expanded="false">
+            How much will I save on my electricity bill?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Savings depend on system size, your energy usage, and your tariff. Most residential customers save between 60%–90% on their electricity bills. We provide a personalised savings estimate in your free quote.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="map-section">
+    <div class="map-section__header container">
+      <span class="section__tag">Find Us</span>
+      <h2 class="section__title">Our Locations</h2>
+    </div>
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.9!2d71.5249!3d34.0151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917b1c3d4c2d5%3A0x0!2sDalazak%20Rd%2C%20Peshawar%2C%20Pakistan!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
+        width="100%"
+        height="420"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="SolarVision office — Dalazak Road, Peshawar"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top container">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon"><i class="fas fa-sun"></i></span>
+          Solar<span>Vision</span>
+        </a>
+        <p>SolarVision Energy by Kaleemllah — bringing clean, affordable solar power to homes and businesses across Pakistan.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="contact.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#residential">Residential Solar</a></li>
+          <li><a href="services.html#commercial">Commercial Solar</a></li>
+          <li><a href="services.html#battery">Battery Storage</a></li>
+          <li><a href="services.html">Monitoring</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Dalazak Road, Peshawar, Pakistan</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+923151900774">+92 315 1900774</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:kaleemullah03151900@gmail.com">kaleemullah03151900@gmail.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon–Fri: 8am – 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2024 SolarVision Energy Pty Ltd. All rights reserved.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
