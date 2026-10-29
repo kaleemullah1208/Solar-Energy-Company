@@ -15,8 +15,3 @@ A professional solar energy company website built with HTML, CSS, and JavaScript
 - Google Fonts (Inter)
 - Unsplash images
 
-## Contact
-- **Name:** Kaleemllah
-- **Email:** kaleemullah03151900@gmail.com
-- **Phone:** +92 315 1900774
-- **Address:** Dalazak Road, Peshawar, Pakistan
